@@ -1,4 +1,4 @@
-print("To-Do v1.0\n")
+print("To-Do v1.1\n")
 
 try:
     while True:
@@ -7,28 +7,36 @@ try:
             case "help":
                 print("help - Vypíše možné příkazy\nlist - Vypíše všechny úkoly\nadd - Přidá úkol\ndelete - Smaže úkol\nexit - Ukončí program\n")
             case "add":
-                with open("list.txt", "a") as f:
+                with open("list.todo", "a") as f:
                     f.write(f"{input("Zadej úkol: ")}\n")
                 print("")
             case "delete":
-                lineToDelete = int(input("Zadej číslo úkolu: "))
-                with open("list.txt", "r") as f:
-                    lines = f.readlines()
-                if 0 < lineToDelete <= len(lines):
-                    lines.pop(lineToDelete - 1)
-                    with open("list.txt", "w") as f:
-                        f.writelines(lines)
-                    print("")
-                else:
-                    print("Neplatné číslo úkolu. Zkuste to znovu.\n")
+                try:
+                    with open("list.todo", "r") as f:
+                        lines = f.readlines()
+                    lineToDelete = int(input("Zadej číslo úkolu: "))
+                    if 0 < lineToDelete <= len(lines):
+                        lines.pop(lineToDelete - 1)
+                        with open("list.todo", "w") as f:
+                            f.writelines(lines)
+                        print("")
+                    else:
+                        print("Neplatné číslo úkolu. Zkuste to znovu.\n")
+                except FileNotFoundError:
+                    print("Soubor nenalezen. Přidejte úkol pomocí příkazu add!\n")
+                except ValueError:
+                    print("Zadali jste neplatnou hodnotu!\n")
             case "list":
-                with open("list.txt", "r") as f:
-                    lines = f.readlines()
-                if len(lines) == 0:
-                    print("To-Do list je prázdný.\n")
-                else:
-                    for i in range(1, (len(lines) + 1)):
-                        print(f"{i}. {lines[i - 1]}")
+                try:
+                    with open("list.todo", "r") as f:
+                        lines = f.readlines()
+                    if len(lines) == 0:
+                        print("To-Do list je prázdný.\n")
+                    else:
+                        for i in range(1, (len(lines) + 1)):
+                            print(f"{i}. {lines[i - 1]}")
+                except FileNotFoundError:
+                    print("Soubor nenalezen. Přidejte úkol pomocí příkazu add!\n")
             case "exit":
                 exit(0)
             case _:

@@ -8,6 +8,7 @@ Příkladové programy na hodinu programování<br>
 4. NumberGuess.py - Hra kde hádáte číslo od 1 - 9. Na hádání máte tři pokusy a hra vám říká jestli vámi zadané číslo je větší nebo menší než číslo správné. Přicházíte o pokusy i v tu chvíli, kdy zadáte neplatné číslo.<br>
 5. WordFlip.py - Zadáte slovo a program slovo převrátí.<br>
 6. RightAngledTriangleTest.py - Zadáte tři strany a program vypíše jestli trojuhelník je pravoúhlý.<br>
+7. vyhodnoceni.py - Vezme pole s odpověďmi uživatele, porovná je s správnými odpověďmi a vypíše kolik máte odpovědí správně a vaši úspěsnost.<br>
 
 ## Licence
 Tento repozitář je licencován pod MIT License<br>

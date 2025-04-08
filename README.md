@@ -16,6 +16,9 @@ Příkladové programy na hodinu programování
 ### Micro:bit
 [README.md](./microbit/README.md)
 
+### Programy z pyramidy
+[README.md](./pyramida/README.md)
+
 ## Licence
 Tento repozitář je licencován pod MIT License
 

@@ -4,3 +4,8 @@ Zde budu přidávat programy z pyramidy porozumění základů programování. P
 ## Obsah
 - 2-1.py - Napište program, ve kterém si na začátku vytvoříte dvě proměnné m a h. m je pro hmotnost v kg a h je pro výšku v cm. Váš program spočítá vaše BMI a vypíše jeho hodnotu.
 - 2-2.py - Napište program, který bude umět spočítat kolik je x procent z nějaké hodnoty n.
+- 2-3.py - Napište program, kderý ze zadaného poloměru kružnice r, vypočte její obvod a obsah.
+- 2-4.py - Napište program, který spočítá o kolik se zvednou dvě 1km koleje, pokud se každá prodlouží o 1 mm? Koleje jsou na svých koncích upevněny a je vyloučen pohyb do strany. Při jejich zvětšení je umožněn tedy jen pohyb vzhůru.
+- 2-5.py - Napište program, který spočítá a vypíše vzdálenost dvou bodů v rovině (2D). První bod je zadán souřadnicemi ax a ay, druhý bod pak bx a by.
+- 3-1.py - Napište program, který ověří (Vypíše Ano/Ne), je-li hodnota v proměnné n kladné číslo.
+- 8-4.py - Zašifrujte vstupní text pomocí Caesarovy šifry.

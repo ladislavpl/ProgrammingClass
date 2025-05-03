@@ -8,4 +8,10 @@ Zde budu přidávat programy z pyramidy porozumění základů programování. P
 - 2-4.py - Napište program, který spočítá o kolik se zvednou dvě 1km koleje, pokud se každá prodlouží o 1 mm? Koleje jsou na svých koncích upevněny a je vyloučen pohyb do strany. Při jejich zvětšení je umožněn tedy jen pohyb vzhůru.
 - 2-5.py - Napište program, který spočítá a vypíše vzdálenost dvou bodů v rovině (2D). První bod je zadán souřadnicemi ax a ay, druhý bod pak bx a by.
 - 3-1.py - Napište program, který ověří (Vypíše Ano/Ne), je-li hodnota v proměnné n kladné číslo.
+- 3-2.py - Napište program, který ověří, je-li hodnota v proměnné n v intervalu (10,20>.
+- 3-3.py - Napište program, který ověřím je-li hodnota v proměnné n číslo dělitelné pěti.
+- 3-4.py - Napište program, který ověřím je-li hodnota v proměnné n číslo dělitelné pěti, kladné a není násobkem čísla 10.
+- 3-5.py - Napište program, který vypíše číslo s větší hodnotou ze dvou hodnot uložených v proměnných x a y.
+- 3-6.py - Napište program, který vypíše vždy jen absolutní hodnotu z obsahu proměnné n.
+- 4-1.py - Vypište hodnoty pro malou násobilku sedmi.
 - 8-4.py - Zašifrujte vstupní text pomocí Caesarovy šifry.

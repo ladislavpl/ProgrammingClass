@@ -14,4 +14,7 @@ Zde budu přidávat programy z pyramidy porozumění základů programování. P
 - 3-5.py - Napište program, který vypíše číslo s větší hodnotou ze dvou hodnot uložených v proměnných x a y.
 - 3-6.py - Napište program, který vypíše vždy jen absolutní hodnotu z obsahu proměnné n.
 - 4-1.py - Vypište hodnoty pro malou násobilku sedmi.
+- 4-2.py - Vypište všechna sudá čísla z intervalu <min,max>.
+- 4-3.py - Napište program, který spočítá výslednou sumu pro jeden haléř, který budu postupně po dobu 30 dní zdvojnásobovat svou hodnotu.
+- 4-4.py - Napište program, který sečte všechna čísla malé násobilky šesti.
 - 8-4.py - Zašifrujte vstupní text pomocí Caesarovy šifry.

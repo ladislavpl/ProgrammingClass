@@ -17,4 +17,6 @@ Zde budu přidávat programy z pyramidy porozumění základů programování. P
 - 4-2.py - Vypište všechna sudá čísla z intervalu <min,max>.
 - 4-3.py - Napište program, který spočítá výslednou sumu pro jeden haléř, který budu postupně po dobu 30 dní zdvojnásobovat svou hodnotu.
 - 4-4.py - Napište program, který sečte všechna čísla malé násobilky šesti.
+- 5-1.py - Mějme úlohu "Lidé a koně", která říká: Ve stáji jsou lidé a koně. Celkem je ve stáji zde 22 hlav a 72 nohou. Napište program, která postupně projede všechny možné varianty počtu lidí a koní ve stáji a vybere z nich tu jednu jedinou, která je validní.
+- 5-2.py - Napište program, který vypíše šachovnici z 0 a 1 do textové konzole. Velikost šachovnice bude vytvořena dle konstanty N nadefinované na začátku programu. **Program využívá command-line argumenty! Syntaxe: python 5-2.py velikost**
 - 8-4.py - Zašifrujte vstupní text pomocí Caesarovy šifry.

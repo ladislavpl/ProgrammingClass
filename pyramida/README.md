@@ -19,4 +19,6 @@ Zde budu přidávat programy z pyramidy porozumění základů programování. P
 - 4-4.py - Napište program, který sečte všechna čísla malé násobilky šesti.
 - 5-1.py - Mějme úlohu "Lidé a koně", která říká: Ve stáji jsou lidé a koně. Celkem je ve stáji zde 22 hlav a 72 nohou. Napište program, která postupně projede všechny možné varianty počtu lidí a koní ve stáji a vybere z nich tu jednu jedinou, která je validní.
 - 5-2.py - Napište program, který vypíše šachovnici z 0 a 1 do textové konzole. Velikost šachovnice bude vytvořena dle konstanty N nadefinované na začátku programu. **Program využívá command-line argumenty! Syntaxe: python 5-2.py velikost**
+- 5-3.py - Napište program, který spočítá zbytek po dělení dvou celých čísel x a y. Nesmíte však použít operaci % a ani jakoukoliv jinou funkci, která je pro tuto operaci přímo určena.
+- 6-1.py - Napište program, který vypíše malou násobilku dvou na řádku.
 - 8-4.py - Zašifrujte vstupní text pomocí Caesarovy šifry.

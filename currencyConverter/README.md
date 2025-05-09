@@ -5,4 +5,4 @@
 1. Nainstaluj requirements pomocí `pip install -r requirements.txt`
 1. HOTOVO!
 ## Podporované měny
-Program podporuje České Koruny (CZK), Eura (EUR), Americké Dolary (USD) a Japonské Wony (JPY)
+Program podporuje České Koruny (CZK), Eura (EUR), Americké Dolary (USD) a Japonské Jeny (JPY)

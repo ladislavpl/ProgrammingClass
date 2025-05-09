@@ -1,6 +1,6 @@
-sell = [[100, 100], [100, 100], [100, 100], [100, 100]]
+sell = [[90, 11], [41, 98], [89, 120], [70, 51]]
 
-bananas = [100, 100, 100, 100]
+bananas = [52, 41, 94, 141]
 
 for i in range(len(bananas)):
     sell[i].append(bananas[i])

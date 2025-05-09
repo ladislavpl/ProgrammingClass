@@ -72,3 +72,11 @@ Zde budu přidávat programy z pyramidy porozumění základů programování. P
 - 8-4.py - Zašifrujte vstupní text pomocí Caesarovy šifry.
 
 - 8-5.py - Převeďte text z podoby v kebab-case do UPPER_SNAKE_CASE.
+
+- 9-1.py - Vytvořte si `slovník` pro pár písmen Morseovy abecedy a pomocí tohoto slovníku proveďte překlad textu do Morseovky.
+
+- 9-2.py - Vytvořte si `slovník`, který bude značit prodej jablek a hrušek pro všechna čtvrtletí. Strukturu zvolte názornou, jasno a přehlednou. Hodnoty si určete dle libosti. Pro tento list napište program:
+   1. Přidejte prodej banánů.
+   1. Zvyšte prodej jablek ve druhém a třetím čtvrtletí o 50%.
+   1. Určete, které ovoce se v průběhu roku nejvíce prodávalo.
+   1. Určete, které čtvrtletí bylo na prodej ovoce nejhorší.

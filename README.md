@@ -16,6 +16,9 @@ Příkladové programy na hodinu programování
 ### Programy z pyramidy
 [README.md](./pyramida/README.md)
 
+### Převodník měn
+[README.md](./currencyConverter/README.md)
+
 ## Licence
 Tento repozitář je licencován pod MIT License
 

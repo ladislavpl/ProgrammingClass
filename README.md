@@ -11,6 +11,8 @@ Příkladové programy na hodinu programování
 1. vyhodnoceni.py - Vezme pole s odpověďmi uživatele, porovná je s správnými odpověďmi a vypíše kolik máte odpovědí správně a vaši úspěsnost.
 1. PrimeNumberCalc.py - Do programu zadáte číslo a program vypíše jestli je číslo prvočíslo a nebo ne
 1. QuadraticFormula.py - Kalkulačka na kvadratické rovnice
+1. Fibonacci.py - Vypisuje n čísel Fibonacciho posloupnosti
+1. MultiplicationTestGen.py - Generuje příklady malé násobilky a řekne vám jestli je výsledek správně a nebo špatně a správný výsledek
 
 ### Micro:bit
 [README.md](./microbit/README.md)

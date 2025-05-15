@@ -23,6 +23,9 @@ Příkladové programy na hodinu programování
 ### Převodník měn
 [README.md](./currencyConverter/README.md)
 
+### Python tahák
+[tahak-python.md](./tahak-python.md)
+
 ## Licence
 Tento repozitář je licencován pod MIT License
 

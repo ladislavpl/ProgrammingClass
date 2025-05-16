@@ -1,10 +1,10 @@
-import random
+from random import randint
 
 print("Number Guessing Game v1.0\n")
 print("Hádáš číslo mezi 1 - 9.\nNa uhodnutí čísla máš tři pokusy.\nPokud neuhodneš, vygeneruje se číslo nové.\n")
 try:
     while True:
-        randomInt = random.randint(1, 9)
+        randomInt = randint(1, 9)
         for i in range(3):
             try:
                 guess = int(input("Hádej číslo: "))

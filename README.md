@@ -26,6 +26,9 @@ Příkladové programy na hodinu programování
 ### Python tahák
 [tahak-python.md](./tahak-python.md)
 
+### Sololearn certifikát
+[sololearn-python.jpg](./sololearn-python.jpg)
+
 ## Licence
 Tento repozitář je licencován pod MIT License
 

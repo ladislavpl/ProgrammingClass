@@ -23,6 +23,9 @@ Příkladové programy na hodinu programování
 ### Převodník měn
 [README.md](./currencyConverter/README.md)
 
+### Tkinter
+[README.md](./tkinter/README.md)
+
 ### Python tahák
 [tahak-python.md](./tahak-python.md)
 

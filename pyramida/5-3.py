@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Remainder after division v1.0\n")
 
 try:
@@ -26,10 +28,12 @@ try:
             vysledek += y
         if vysledek != x:
             vysledek -= y
-        if (operatorX == "-" and operatorY == "+") or (operatorX == "+" and operatorY == "-"):
+        if (operatorX == "-" and operatorY == "+") or (
+            operatorX == "+" and operatorY == "-"
+        ):
             zbytek = (x - vysledek) * -1
         else:
             zbytek = x - vysledek
         print(f"Zbytek: {zbytek}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

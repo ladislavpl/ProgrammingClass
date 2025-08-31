@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Abs v1.0\n")
 
 try:
@@ -10,4 +12,4 @@ try:
 
         print(f"Absolutní hodnota je: {abs(n)}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

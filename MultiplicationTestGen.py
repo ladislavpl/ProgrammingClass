@@ -1,21 +1,24 @@
+import sys
 from random import randint
 
 print("Multiplication Test Generator v1.0\n")
 
 try:
     while True:
-        problem = [randint(1, 10), randint(1, 10)]
-        correctResult = problem[0] * problem[1]
+        problem = [randint(1, 10), randint(1, 10)]  # noqa: S311
+        correctresult = problem[0] * problem[1]
 
         try:
-            userResult = int(input(f"{problem[0]} * {problem[1]} = "))
+            userresult = int(input(f"{problem[0]} * {problem[1]} = "))
         except ValueError:
-            print(f"Zadali jste neplatnou hodnotu!\nSprávný výsledek je: {correctResult}\n")
+            print(f"""Zadali jste neplatnou hodnotu!
+                  Správný výsledek je: {correctresult}
+                  """)
             continue
 
-        if userResult == correctResult:
+        if userresult == correctresult:
             print("Výsledek je správný!\n")
         else:
-            print(f"Výsledek je špatně!\nSprávný výsledek je: {correctResult}\n")
+            print(f"Výsledek je špatně!\nSprávný výsledek je: {correctresult}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

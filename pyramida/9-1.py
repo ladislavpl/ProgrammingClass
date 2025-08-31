@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 morse = {
     "a": "·-",
     "b": "-···",
@@ -34,7 +36,7 @@ morse = {
     "6": "-····",
     "7": "--···",
     "8": "---··",
-    "9": "----·"
+    "9": "----·",
 }
 
 print("Morsecode Translator v1.0\n")
@@ -53,12 +55,14 @@ try:
             try:
                 translatedArray.append(morse[letter])
             except KeyError:
-                print("V zadaném textu je znak který neumím přeložit.\nText musí být bez háčků a čárek a obsahovat pouze znaky anglické abecedy a čísla.\n")
+                print("""V zadaném textu je znak který neumím přeložit.
+                      Text musí být bez háčků a čárek a obsahovat pouze znaky anglické abecedy a čísla.
+                      """)  # noqa: E501
                 isWorking = False
                 break
             translatedArray.append(" ")
-        if isWorking == False:
+        if not isWorking:
             continue
-        print(f"Překlad: {"".join(translatedArray)}\n")
+        print(f"Překlad: {''.join(translatedArray)}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

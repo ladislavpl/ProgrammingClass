@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("kebab-case to UPPER_SNAKE_CASE Converter v1.0\n")
 
 try:
@@ -13,5 +15,4 @@ try:
                 convertedList.append(letter)
         print("".join(convertedList))
 except KeyboardInterrupt:
-    exit(0)
-    
+    sys.exit(0)

@@ -1,4 +1,4 @@
-sell = {
+sell = {  # noqa: INP001
     "apples1": 90,
     "apples2": 41,
     "apples3": 89,
@@ -23,7 +23,12 @@ for i in range(1, 5):
     sumFruit[1] += sell[f"pears{i}"]
     sumFruit[2] += sell[f"bananas{i}"]
 maxSumFruit = max(sumFruit)
-print("3. ", "Jablka" if maxSumFruit == sumFruit[0] else "", "Hrušky" if maxSumFruit == sumFruit[1] else "", "Banány" if maxSumFruit == sumFruit[2] else "")
+print(
+    "3. ",
+    "Jablka" if maxSumFruit == sumFruit[0] else "",
+    "Hrušky" if maxSumFruit == sumFruit[1] else "",
+    "Banány" if maxSumFruit == sumFruit[2] else "",
+)
 
 quarters = [0, 0, 0, 0]
 for i in range(len(quarters)):
@@ -31,4 +36,10 @@ for i in range(len(quarters)):
     quarters[i] += sell[f"pears{i + 1}"]
     quarters[i] += sell[f"bananas{i + 1}"]
 minSell = min(quarters)
-print("4. ", "1. čtvrtletí" if minSell == quarters[0] else "", "2. čtvrtletí" if minSell == quarters[1] else "", "3. čtvrtletí" if minSell == quarters[2] else "", "4. čtvrtletí" if minSell == quarters[3] else "")
+print(
+    "4. ",
+    "1. čtvrtletí" if minSell == quarters[0] else "",
+    "2. čtvrtletí" if minSell == quarters[1] else "",
+    "3. čtvrtletí" if minSell == quarters[2] else "",
+    "4. čtvrtletí" if minSell == quarters[3] else "",
+)

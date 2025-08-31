@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Positive Number Tester v1.0")
 
 try:
@@ -12,4 +14,4 @@ try:
         elif n <= 0:
             print("Ne\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

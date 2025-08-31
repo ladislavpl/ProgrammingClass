@@ -1,3 +1,5 @@
+import sys
+
 print("Linear Equations Calc v1.0")
 
 try:
@@ -17,4 +19,4 @@ try:
             continue
         print(f"x = {b * -1 / a}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

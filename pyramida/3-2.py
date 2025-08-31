@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Num Checker v1.0\n")
 
 try:
@@ -8,9 +10,9 @@ try:
             print("Zadána neplatná hodnota!\n")
             continue
 
-        if n > 10 and n <= 20:
+        if n > 10 and n <= 20:  # noqa: PLR2004
             print("Číslo je v intervalu (10,20>\n")
         else:
             print("Číslo není v intervalu (10,20>\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

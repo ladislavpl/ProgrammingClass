@@ -1,4 +1,4 @@
-numbers = (5, 4, 3, 2)
+numbers = (5, 4, 3, 2)  # noqa: INP001
 print(f"1. Výsledek: {sum(numbers)}")
 
 evenNum = 0
@@ -27,13 +27,13 @@ for i in range(len(numbers) - 1):
     else:
         consecutiveNums = False
         break
-if consecutiveNums == True:
+if consecutiveNums:
     print("6. Čísla jdou po sobě")
 else:
     print("6. Čísla nejdou po sobě")
 
 x = 5
-if (x in numbers) == True:
+if x in numbers:
     print("7. Číslo se v tuple nachází")
 else:
     print("7. Číslo se v tuple nenachází")

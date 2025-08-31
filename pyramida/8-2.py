@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Upper-Case Converter v1.0\n")
 
 try:
@@ -5,4 +7,4 @@ try:
         text = input("Zadejte text: ")
         print(text.upper(), "\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

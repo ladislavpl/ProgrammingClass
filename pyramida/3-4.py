@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Some Test v1.0\n")
 
 try:
@@ -13,4 +15,4 @@ try:
         else:
             print("Číslo nesplňuje podmínky!\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

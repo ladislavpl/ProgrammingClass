@@ -1,4 +1,6 @@
+import sys  # noqa: INP001
 from math import pi
+
 print("Circle Calc v1.0\n")
 
 try:
@@ -9,8 +11,8 @@ try:
             print("Zadána neplatná hodnota\n")
             continue
         obvod = 2 * pi * r
-        obsah = pi * r ** 2
+        obsah = pi * r**2
 
         print(f"Obvod: {obvod}\nObsah: {obsah}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

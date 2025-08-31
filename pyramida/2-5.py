@@ -1,3 +1,4 @@
+import sys  # noqa: INP001
 from math import sqrt
 
 print("2D Distance Calculator v1.0")
@@ -24,8 +25,8 @@ try:
         elif by - ay >= 0:
             distanceY = by - ay
 
-        distance = sqrt(distanceX ** 2 + distanceY ** 2)
+        distance = sqrt(distanceX**2 + distanceY**2)
 
         print(f"\nVzdálenost bodu a od bodu b je: {distance}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

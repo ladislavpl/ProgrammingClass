@@ -1,26 +1,28 @@
+import sys
 from random import randint
 
 print("Number Guessing Game v1.0\n")
-print("Hádáš číslo mezi 1 - 9.\nNa uhodnutí čísla máš tři pokusy.\nPokud neuhodneš, vygeneruje se číslo nové.\n")
+print("""Hádáš číslo mezi 1 - 9.
+      Na uhodnutí čísla máš tři pokusy.\nPokud neuhodneš, vygeneruje se číslo nové.
+      """)
 try:
     while True:
-        randomInt = randint(1, 9)
-        for i in range(3):
+        randomint = randint(1, 9)  # noqa: S311
+        for _ in range(3):
             try:
                 guess = int(input("Hádej číslo: "))
 
-                if randomInt == guess:
+                if randomint == guess:
                     print("Gratuluji! Číslo jsi uhodl.\n")
                     break
-                elif guess >= 10 or guess <= 0:
+                elif guess >= 10 or guess <= 0:  # noqa: PLR2004
                     print("Číslo je neplatné! Neplýtvej pokusy. :)\n")
-                elif guess > randomInt:
+                elif guess > randomint:
                     print("Vaše číslo je větší než to správné\n")
-                elif guess < randomInt:
-                    print("Vaše číslo je menší než to správné\n") 
+                elif guess < randomint:
+                    print("Vaše číslo je menší než to správné\n")
             except ValueError:
-                print("Zadali jste neplatnou hodnotu!\n")   
+                print("Zadali jste neplatnou hodnotu!\n")
         print("Generuji nové číslo.\n")
 except KeyboardInterrupt:
-    exit(0)
-    
+    sys.exit(0)

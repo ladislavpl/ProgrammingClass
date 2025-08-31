@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 print("Caesar Shift v1.1\n")
@@ -22,7 +24,7 @@ try:
                 tempArray.append(toArray[i])
                 continue
             temp += offset
-            while temp > 25:
+            while temp > 25:  # noqa: PLR2004
                 temp -= 26
             while temp < 0:
                 temp += 26
@@ -32,4 +34,4 @@ try:
 
         print(f"Zašifrovaný text: {encrypted}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

@@ -1,3 +1,5 @@
+import sys
+
 print("Volume of rectangular cone v1.0\n")
 
 try:
@@ -8,6 +10,6 @@ try:
         except ValueError:
             print("Zadali jste neplatnou hodnotu!\nHodnota musí být číslo!\n")
 
-        print(f"V = {(1 / 3) * a ** 2 * v}\n")
+        print(f"V = {(1 / 3) * a**2 * v}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

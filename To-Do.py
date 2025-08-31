@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+
 print("To-Do v1.1\n")
 
 try:
@@ -5,21 +8,26 @@ try:
         command = input("Zadej příkaz. Pro nápovědu napiš help: ")
         match command:
             case "help":
-                print("help - Vypíše možné příkazy\nlist - Vypíše všechny úkoly\nadd - Přidá úkol\ndelete - Smaže úkol\nexit - Ukončí program\n")
+                print("""help - Vypíše možné příkazy
+                      list - Vypíše všechny úkoly
+                      add - Přidá úkol
+                      delete - Smaže úkol
+                      exit - Ukončí program
+                      """)
             case "add":
-                with open("list.todo", "a") as f:
-                    f.write(f"{input("Zadej úkol: ")}\n")
-                print("")
+                with Path.open("list.todo", "a") as f:
+                    f.write(f"{input('Zadej úkol: ')}\n")
+                print()
             case "delete":
                 try:
-                    with open("list.todo", "r") as f:
+                    with Path.open("list.todo", "r") as f:
                         lines = f.readlines()
-                    lineToDelete = int(input("Zadej číslo úkolu: "))
-                    if 0 < lineToDelete <= len(lines):
-                        lines.pop(lineToDelete - 1)
-                        with open("list.todo", "w") as f:
+                    linetodelete = int(input("Zadej číslo úkolu: "))
+                    if 0 < linetodelete <= len(lines):
+                        lines.pop(linetodelete - 1)
+                        with Path.open("list.todo", "w") as f:
                             f.writelines(lines)
-                        print("")
+                        print()
                     else:
                         print("Neplatné číslo úkolu. Zkuste to znovu.\n")
                 except FileNotFoundError:
@@ -28,7 +36,7 @@ try:
                     print("Zadali jste neplatnou hodnotu!\n")
             case "list":
                 try:
-                    with open("list.todo", "r") as f:
+                    with Path.open("list.todo", "r") as f:
                         lines = f.readlines()
                     if len(lines) == 0:
                         print("To-Do list je prázdný.\n")
@@ -38,8 +46,8 @@ try:
                 except FileNotFoundError:
                     print("Soubor nenalezen. Přidejte úkol pomocí příkazu add!\n")
             case "exit":
-                exit(0)
+                sys.exit(0)
             case _:
-                print("Neplatný příkaz!\n")                     
+                print("Neplatný příkaz!\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

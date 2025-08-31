@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 vowels = "aeiouyáéíóúý"
 
 print("Vowel Counter v1.0\n")
@@ -13,4 +15,4 @@ try:
                     counter += 1
         print(f"Počet samohlásek: {counter}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

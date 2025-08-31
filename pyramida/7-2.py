@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, 4, 10, 15, 34, 32, 96]
+numbers = [1, 2, 3, 4, 10, 15, 34, 32, 96]  # noqa: INP001
 
 
 for i in range(len(numbers)):
@@ -14,5 +14,3 @@ for n in numbers:
         numbers.pop(numbers.index(n))
 
 print(f"Výsledek: {numbers}")
-
-

@@ -1,3 +1,4 @@
+import sys
 from math import sqrt
 
 print("Quadratic Formula Calc v1.0\n")
@@ -12,7 +13,7 @@ try:
             print("Zadali jste neplatnou hodnotu!\n")
             continue
 
-        D = b ** 2 - 4 * a * c
+        D = b**2 - 4 * a * c
 
         if D < 0:
             print("Není řešení\n")
@@ -25,4 +26,4 @@ try:
             print(f"x1 = {x1}")
             print(f"x2 = {x2}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

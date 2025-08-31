@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Bigger Num Printer v1.0\n")
 
 try:
@@ -14,5 +16,4 @@ try:
         else:
             print(f"{y}\n")
 except KeyboardInterrupt:
-    exit(0)
-    
+    sys.exit(0)

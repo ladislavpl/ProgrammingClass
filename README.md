@@ -16,6 +16,7 @@ Příkladové programy na hodinu programování
 1. LinearEquations.py - Vypočítá lineární rovnici
 1. RectangularCone.py - Vypočítá objem pravoúhlého čtyřbokého jehlanu
 1. RotationCone.py - Vypočítá objem rotačního kužele
+1. Mastermind.py - Hra Logik/Mastermind v terminálu 
 
 ### Micro:bit
 [README.md](./microbit/README.md)

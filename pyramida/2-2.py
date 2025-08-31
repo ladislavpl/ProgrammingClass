@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("How much percent v1.0")
 print("Tento program spočítá kolik je x procent z hodnoty n\n")
 
@@ -13,4 +15,4 @@ try:
 
         print(f"Výsledek: {result}%\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

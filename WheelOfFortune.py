@@ -1,3 +1,4 @@
+import sys
 from random import choice
 
 print("Kolo štěstí v1.0\n")
@@ -13,8 +14,8 @@ try:
             else:
                 kolostesti.append(temp)
         if kolostesti != []:
-            print("\nVýsledek: " + choice(kolostesti) + "\n")
+            print("\nVýsledek: " + choice(kolostesti) + "\n")  # noqa: S311
         else:
             print("\nNezadali jste žádný text. Kolo nelze spustit!\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

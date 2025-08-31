@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("Sum v1.0\n")
 
 sumArray = []
@@ -13,6 +15,6 @@ try:
             break
         else:
             sumArray.append(n)
+    print(f"Výsledek: {sum(sumArray)}")
 except KeyboardInterrupt:
-    exit(0)
-print(f"Výsledek: {sum(sumArray)}")
+    sys.exit(0)

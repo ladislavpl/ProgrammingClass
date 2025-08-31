@@ -1,4 +1,4 @@
-money = 0.01
+money = 0.01  # noqa: INP001
 
 print("Money Doubler v1.0\n")
 

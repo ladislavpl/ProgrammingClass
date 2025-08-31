@@ -1,3 +1,5 @@
+import sys  # noqa: INP001
+
 print("BMI Calculator v1.0")
 
 try:
@@ -13,4 +15,4 @@ try:
 
         print(f"Vaše BMI je: {BMI}\n")
 except KeyboardInterrupt:
-    exit(0)
+    sys.exit(0)

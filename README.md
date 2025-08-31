@@ -13,6 +13,9 @@ Příkladové programy na hodinu programování
 1. QuadraticFormula.py - Kalkulačka na kvadratické rovnice
 1. Fibonacci.py - Vypisuje n čísel Fibonacciho posloupnosti
 1. MultiplicationTestGen.py - Generuje příklady malé násobilky a řekne vám jestli je výsledek správně a nebo špatně a správný výsledek
+1. LinearEquations.py - Vypočítá lineární rovnici
+1. RectangularCone.py - Vypočítá objem pravoúhlého čtyřbokého jehlanu
+1. RotationCone.py - Vypočítá objem rotačního kužele
 
 ### Micro:bit
 [README.md](./microbit/README.md)
